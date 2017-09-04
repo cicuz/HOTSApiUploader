@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>HOTSAPIUploader.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0C80B3481F5DEE9700D894F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C80B35E1F5DEE9700D894F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C80B3691F5DEE9700D894F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
