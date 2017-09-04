@@ -14,6 +14,8 @@
 		0C80B3591F5DEE9700D894F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C80B3571F5DEE9700D894F9 /* Main.storyboard */; };
 		0C80B3641F5DEE9700D894F9 /* HOTSAPIUploaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80B3631F5DEE9700D894F9 /* HOTSAPIUploaderTests.m */; };
 		0C80B36F1F5DEE9700D894F9 /* HOTSAPIUploaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80B36E1F5DEE9700D894F9 /* HOTSAPIUploaderUITests.m */; };
+		0C80B37E1F5E1A2D00D894F9 /* MyViewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80B37D1F5E1A2D00D894F9 /* MyViewClass.m */; };
+		ABB230B65C85443F2F1D4599 /* libPods-HOTSAPIUploader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7099E38990F17CA66FA95D84 /* libPods-HOTSAPIUploader.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		0C80B36A1F5DEE9700D894F9 /* HOTSAPIUploaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HOTSAPIUploaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C80B36E1F5DEE9700D894F9 /* HOTSAPIUploaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HOTSAPIUploaderUITests.m; sourceTree = "<group>"; };
 		0C80B3701F5DEE9700D894F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C80B37C1F5E1A2D00D894F9 /* MyViewClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewClass.h; sourceTree = "<group>"; };
+		0C80B37D1F5E1A2D00D894F9 /* MyViewClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewClass.m; sourceTree = "<group>"; };
+		7099E38990F17CA66FA95D84 /* libPods-HOTSAPIUploader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HOTSAPIUploader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE39ABF2041D6BB2A6B64D0 /* Pods-HOTSAPIUploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTSAPIUploader.release.xcconfig"; path = "Pods/Target Support Files/Pods-HOTSAPIUploader/Pods-HOTSAPIUploader.release.xcconfig"; sourceTree = "<group>"; };
+		BBB0266167A73BA1D63E0A23 /* Pods-HOTSAPIUploader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTSAPIUploader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HOTSAPIUploader/Pods-HOTSAPIUploader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB230B65C85443F2F1D4599 /* libPods-HOTSAPIUploader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,8 @@
 				0C80B3621F5DEE9700D894F9 /* HOTSAPIUploaderTests */,
 				0C80B36D1F5DEE9700D894F9 /* HOTSAPIUploaderUITests */,
 				0C80B34A1F5DEE9700D894F9 /* Products */,
+				4148D33D96504F98A369EC02 /* Pods */,
+				BFAA73452E8BA57C614084E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +117,8 @@
 				0C80B3571F5DEE9700D894F9 /* Main.storyboard */,
 				0C80B35A1F5DEE9700D894F9 /* Info.plist */,
 				0C80B34F1F5DEE9700D894F9 /* Supporting Files */,
+				0C80B37C1F5E1A2D00D894F9 /* MyViewClass.h */,
+				0C80B37D1F5E1A2D00D894F9 /* MyViewClass.m */,
 			);
 			path = HOTSAPIUploader;
 			sourceTree = "<group>";
@@ -137,6 +149,23 @@
 			path = HOTSAPIUploaderUITests;
 			sourceTree = "<group>";
 		};
+		4148D33D96504F98A369EC02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBB0266167A73BA1D63E0A23 /* Pods-HOTSAPIUploader.debug.xcconfig */,
+				8DE39ABF2041D6BB2A6B64D0 /* Pods-HOTSAPIUploader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFAA73452E8BA57C614084E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7099E38990F17CA66FA95D84 /* libPods-HOTSAPIUploader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C80B3731F5DEE9700D894F9 /* Build configuration list for PBXNativeTarget "HOTSAPIUploader" */;
 			buildPhases = (
+				C1FC8D84CBD8873D31E3BF71 /* [CP] Check Pods Manifest.lock */,
 				0C80B3451F5DEE9700D894F9 /* Sources */,
 				0C80B3461F5DEE9700D894F9 /* Frameworks */,
 				0C80B3471F5DEE9700D894F9 /* Resources */,
+				FF0FD4E761A74ABF07B81BAB /* [CP] Embed Pods Frameworks */,
+				BEE85D0DBE0C8E4A01F04A66 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +296,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BEE85D0DBE0C8E4A01F04A66 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HOTSAPIUploader/Pods-HOTSAPIUploader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1FC8D84CBD8873D31E3BF71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HOTSAPIUploader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF0FD4E761A74ABF07B81BAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HOTSAPIUploader/Pods-HOTSAPIUploader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C80B3451F5DEE9700D894F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +355,7 @@
 				0C80B3541F5DEE9700D894F9 /* ViewController.m in Sources */,
 				0C80B3511F5DEE9700D894F9 /* main.m in Sources */,
 				0C80B34E1F5DEE9700D894F9 /* AppDelegate.m in Sources */,
+				0C80B37E1F5E1A2D00D894F9 /* MyViewClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +493,7 @@
 		};
 		0C80B3741F5DEE9700D894F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB0266167A73BA1D63E0A23 /* Pods-HOTSAPIUploader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -421,6 +506,7 @@
 		};
 		0C80B3751F5DEE9700D894F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE39ABF2041D6BB2A6B64D0 /* Pods-HOTSAPIUploader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -500,6 +586,7 @@
 				0C80B3751F5DEE9700D894F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C80B3761F5DEE9700D894F9 /* Build configuration list for PBXNativeTarget "HOTSAPIUploaderTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +595,7 @@
 				0C80B3781F5DEE9700D894F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C80B3791F5DEE9700D894F9 /* Build configuration list for PBXNativeTarget "HOTSAPIUploaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +604,7 @@
 				0C80B37B1F5DEE9700D894F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

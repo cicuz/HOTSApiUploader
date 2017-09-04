@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MyViewClass.h"
 
 @interface ViewController : NSViewController
-
 
 @end
 
