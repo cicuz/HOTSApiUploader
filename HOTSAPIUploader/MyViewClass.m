@@ -7,6 +7,7 @@
 //
 
 #import "MyViewClass.h"
+#import "Uploader.h"
 
 @implementation MyViewClass
 
@@ -14,12 +15,6 @@
     printf("Enter\n");
     return NSDragOperationEvery;
 }
-
-/*
- - (NSDragOperation)draggingUpdated:(id<NSDraggingInfo>)sender {
- return NSDragOperationEvery;
- }
- */
 
 - (void)draggingExited:(id<NSDraggingInfo>)sender {
     printf("Exit\n");
@@ -39,6 +34,9 @@
         NSArray *files = [pboard propertyListForType:NSFilenamesPboardType];
         unsigned long numberOfFiles = [files count];
         printf("%lu\n", numberOfFiles);
+        for (NSString *file in files) {
+            [Uploader uploadFile:file];
+        }
     }
     return YES;
 }

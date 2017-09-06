@@ -15,6 +15,7 @@
 		0C80B3641F5DEE9700D894F9 /* HOTSAPIUploaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80B3631F5DEE9700D894F9 /* HOTSAPIUploaderTests.m */; };
 		0C80B36F1F5DEE9700D894F9 /* HOTSAPIUploaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80B36E1F5DEE9700D894F9 /* HOTSAPIUploaderUITests.m */; };
 		0C80B37E1F5E1A2D00D894F9 /* MyViewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80B37D1F5E1A2D00D894F9 /* MyViewClass.m */; };
+		455E0F7D1F5F07110034B8CA /* Uploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E0F7C1F5F07110034B8CA /* Uploader.m */; };
 		ABB230B65C85443F2F1D4599 /* libPods-HOTSAPIUploader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7099E38990F17CA66FA95D84 /* libPods-HOTSAPIUploader.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,8 @@
 		0C80B3701F5DEE9700D894F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C80B37C1F5E1A2D00D894F9 /* MyViewClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewClass.h; sourceTree = "<group>"; };
 		0C80B37D1F5E1A2D00D894F9 /* MyViewClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewClass.m; sourceTree = "<group>"; };
+		455E0F7C1F5F07110034B8CA /* Uploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Uploader.m; sourceTree = "<group>"; };
+		455E0F7E1F5F072A0034B8CA /* Uploader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Uploader.h; sourceTree = "<group>"; };
 		7099E38990F17CA66FA95D84 /* libPods-HOTSAPIUploader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HOTSAPIUploader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE39ABF2041D6BB2A6B64D0 /* Pods-HOTSAPIUploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTSAPIUploader.release.xcconfig"; path = "Pods/Target Support Files/Pods-HOTSAPIUploader/Pods-HOTSAPIUploader.release.xcconfig"; sourceTree = "<group>"; };
 		BBB0266167A73BA1D63E0A23 /* Pods-HOTSAPIUploader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOTSAPIUploader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HOTSAPIUploader/Pods-HOTSAPIUploader.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				0C80B3571F5DEE9700D894F9 /* Main.storyboard */,
 				0C80B35A1F5DEE9700D894F9 /* Info.plist */,
 				0C80B34F1F5DEE9700D894F9 /* Supporting Files */,
+				455E0F7E1F5F072A0034B8CA /* Uploader.h */,
+				455E0F7C1F5F07110034B8CA /* Uploader.m */,
 				0C80B37C1F5E1A2D00D894F9 /* MyViewClass.h */,
 				0C80B37D1F5E1A2D00D894F9 /* MyViewClass.m */,
 			);
@@ -354,6 +359,7 @@
 			files = (
 				0C80B3541F5DEE9700D894F9 /* ViewController.m in Sources */,
 				0C80B3511F5DEE9700D894F9 /* main.m in Sources */,
+				455E0F7D1F5F07110034B8CA /* Uploader.m in Sources */,
 				0C80B34E1F5DEE9700D894F9 /* AppDelegate.m in Sources */,
 				0C80B37E1F5E1A2D00D894F9 /* MyViewClass.m in Sources */,
 			);
