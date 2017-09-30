@@ -11,7 +11,7 @@
 
 @interface Uploader : NSObject
 
-+ (void)uploadFile:(NSString *)aFile;
++ (void)uploadFile:(NSString *)aFile completion:(void(^)(NSData *))callback;
 
 @end
 

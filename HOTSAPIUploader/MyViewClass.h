@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MyViewClass : NSView
+@interface MyViewClass : NSView <NSTableViewDelegate, NSTableViewDataSource>
+
+@property NSTableView *leTable;
 
 @end

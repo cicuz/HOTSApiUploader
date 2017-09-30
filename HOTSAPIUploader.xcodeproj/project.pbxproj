@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C77EDA71F75BDE10033A421 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C77EDA61F75BDE10033A421 /* MyButton.m */; };
 		0C80B34E1F5DEE9700D894F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80B34D1F5DEE9700D894F9 /* AppDelegate.m */; };
 		0C80B3511F5DEE9700D894F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80B3501F5DEE9700D894F9 /* main.m */; };
 		0C80B3541F5DEE9700D894F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80B3531F5DEE9700D894F9 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C77EDA51F75BDE10033A421 /* MyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		0C77EDA61F75BDE10033A421 /* MyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		0C80B3491F5DEE9700D894F9 /* HOTSAPIUploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HOTSAPIUploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C80B34C1F5DEE9700D894F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0C80B34D1F5DEE9700D894F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				455E0F7C1F5F07110034B8CA /* Uploader.m */,
 				0C80B37C1F5E1A2D00D894F9 /* MyViewClass.h */,
 				0C80B37D1F5E1A2D00D894F9 /* MyViewClass.m */,
+				0C77EDA51F75BDE10033A421 /* MyButton.h */,
+				0C77EDA61F75BDE10033A421 /* MyButton.m */,
 			);
 			path = HOTSAPIUploader;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				0C80B3541F5DEE9700D894F9 /* ViewController.m in Sources */,
 				0C80B3511F5DEE9700D894F9 /* main.m in Sources */,
 				455E0F7D1F5F07110034B8CA /* Uploader.m in Sources */,
+				0C77EDA71F75BDE10033A421 /* MyButton.m in Sources */,
 				0C80B34E1F5DEE9700D894F9 /* AppDelegate.m in Sources */,
 				0C80B37E1F5E1A2D00D894F9 /* MyViewClass.m in Sources */,
 			);

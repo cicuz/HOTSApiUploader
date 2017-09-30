@@ -73,14 +73,11 @@
     return httpBody;
 }
 
-+ (void)uploadFile:(NSString *)aFile {
++ (void)uploadFile:(NSString *)aFile completion:(void(^)(NSData *))callback {
     NSFileManager *filemgr;
     
     filemgr = [NSFileManager defaultManager];
-    
-    NSString *path = @"/Users/mccc/Library/Application Support/Blizzard/Heroes of the Storm/Accounts/106323847/2-Hero-1-6902495/Replays/Multiplayer/Infernal Shrines (7).StormReplay";
-    
-    if ([filemgr fileExistsAtPath:path] == YES)
+    if ([filemgr fileExistsAtPath:aFile] == YES)
         NSLog (@"File exists");
     else {
         NSLog (@"File not found");
@@ -102,10 +99,12 @@
     [request setValue:contentType forHTTPHeaderField: @"Content-Type"];
     
     // create body
-    NSData *httpBody = [Uploader createBodyWithBoundary:boundary parameters:params paths:@[path] fieldName:@"file"];
+    NSData *httpBody = [Uploader createBodyWithBoundary:boundary parameters:params paths:@[aFile] fieldName:@"file"];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];  // use sharedSession or create your own
     
-    NSURLSessionTask *task = [session uploadTaskWithRequest:request fromData:httpBody completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    NSURLSessionTask *task = [session uploadTaskWithRequest:request
+                                                   fromData:httpBody
+                                          completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
             NSLog(@"error = %@", error);
             return;
@@ -113,6 +112,7 @@
         
         NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         NSLog(@"result = %@", result);
+        callback(data);
     }];
     [task resume];
 }
